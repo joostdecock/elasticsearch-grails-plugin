@@ -7,12 +7,13 @@ class IndexNamingUtils {
 
     public static final READ_SUFFIX = "_read"
     public static final WRITE_SUFFIX = "_write"
+    public static final INDEX_PREFIX = "bookzone_"
 
     static String queryingIndexFor(String indexName) {
-        indexName + READ_SUFFIX
+        INDEX_PREFIX + indexName + READ_SUFFIX
     }
 
     static String indexingIndexFor(String indexName) {
-        indexName + WRITE_SUFFIX
+        INDEX_PREFIX + indexName + WRITE_SUFFIX
     }
 }
